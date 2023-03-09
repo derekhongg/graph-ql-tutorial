@@ -1,10 +1,8 @@
-const { UserList } = require('../FakeData');
+import { UserList } from '../FakeData'
 
 const resolvers = {
     Query: {
-        users() {
-            return UserList;
-        },
+        users: () => UserList,
     },
 };
 
